@@ -80,6 +80,20 @@
             font-weight: 500;
         }
 
+        nav .cv-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            border: 1px solid var(--accent-color);
+            border-radius: 4px;
+            padding: 0.25rem 0.75rem;
+            margin-top: -0.25rem;
+        }
+
+        nav .cv-link:hover {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
         .tab-content {
             display: none;
         }
@@ -201,6 +215,7 @@
                 <button class="nav-btn active" onclick="switchTab('home')">Home</button>
                 <button class="nav-btn" onclick="switchTab('research')">Research</button>
                 <button class="nav-btn" onclick="switchTab('teaching')">Teaching</button>
+                <a class="cv-link" href="cvAug26.pdf" target="_blank" rel="noopener">View CV</a>
             </nav>
         </header>
 
