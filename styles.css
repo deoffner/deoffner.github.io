@@ -5,6 +5,7 @@
     --accent-color: #900000;
     --border-color: #e5e5e5;
     --image-bg-color: #eeeeee;
+    --body-copy-color: #333333;
     --max-width: 800px;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
@@ -16,6 +17,7 @@
     --accent-color: #e07a72;
     --border-color: #454540;
     --image-bg-color: #30302c;
+    --body-copy-color: #e3e3dd;
 }
 
 * {
@@ -198,7 +200,11 @@ h3 {
 
 p {
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--body-copy-color);
+}
+
+a {
+    color: var(--accent-color);
 }
 
 ul {
