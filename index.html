@@ -416,7 +416,7 @@
                 <p>At Carnegie Mellon University, I instruct foundational and advanced undergraduate courses in mathematics, operations research, and linear algebra.</p>
 
                 <h2>Letters of Recommendation</h2>
-                <p><a href="letters-of-recommendation.html">Read the letters of recommendation guidelines</a>.</p>
+                <p><a href="letters-of-recommendation.html">If you would like a letter of recommendation, click here.</a>.</p>
             </section>
         </main>
 
@@ -446,6 +446,11 @@
             if (activeButton) {
                 activeButton.classList.add('active');
             }
+        }
+
+        const initialTab = window.location.hash.slice(1);
+        if (document.getElementById(initialTab)?.classList.contains('tab-content')) {
+            switchTab(initialTab);
         }
     </script>
 </body>
