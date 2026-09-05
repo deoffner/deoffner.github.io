@@ -440,6 +440,8 @@
             if (activeButton) {
                 activeButton.classList.add('active');
             }
+
+            window.history.replaceState(null, '', `#${tabId}`);
         }
 
         const initialTab = window.location.hash.slice(1);
