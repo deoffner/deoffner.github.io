@@ -1,0 +1,30 @@
+PROMPT LOG
+Project: deoffner.github.io
+Updated: 2026-09-05
+
+This file records the user requests that shaped the website during development.
+
+1. Remove all instances of citation annotations such as [cite: ...] from the page.
+2. Add an acknowledgment of AI assistance at the bottom of the page.
+3. Add the supplied publications and associated links to the Research tab.
+4. Add a button that opens the CV document in a separate browser tab.
+5. Add a cube-shaped favicon.
+6. Use the supplied mathematical grid image as inspiration for the page background.
+7. Make the area behind the text white while keeping the grid outside the content area.
+8. Add a separate Letters of Recommendation page and link to it from the Teaching tab.
+9. Make the Letters of Recommendation page share the main page's header, footer, style, and fonts.
+10. Remove the back-to-homepage link from the recommendation page.
+11. Make the Home, Research, and Teaching links on the recommendation page target the corresponding tabs on index.html.
+12. Remove course sections from the Teaching tab.
+13. Remove the Educational Leadership and Outreach section from the Teaching tab.
+14. Add links for the Mathematics Department and advising appointments.
+15. Simplify the Home tab to show only email, appointment, and office information.
+16. Improve the Home tab presentation and contact formatting.
+17. Format Home and Teaching content with bullets similar to the Research tab.
+18. Format Research citations consistently across publications, preprints, and other publications.
+19. Move Related Materials below the Capture-time extremal cop-win graphs citation and indent the two bullets.
+20. Create a shared styles.css file for the main page and Letters of Recommendation page.
+21. Use a consistent favicon declaration on both pages.
+22. Update tab navigation so the selected tab is represented in the URL hash and can be shared.
+23. Add descriptive alt text to the profile image on both pages.
+24. Create this prompt log as a text file.
