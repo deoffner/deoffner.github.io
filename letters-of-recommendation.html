@@ -40,11 +40,31 @@
             padding-bottom: 1.5rem;
         }
 
+        .header-profile {
+            align-items: center;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .header-image-container {
+            flex: 0 0 96px;
+        }
+
+        .header-image-container img {
+            background-color: #eee;
+            border-radius: 4px;
+            display: block;
+            height: 120px;
+            object-fit: cover;
+            width: 96px;
+        }
+
         h1 {
             font-size: 2rem;
             font-weight: 600;
             letter-spacing: -0.02em;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
 
         .subtitle {
@@ -79,6 +99,21 @@
         nav .cv-link:hover {
             background-color: var(--accent-color);
             color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            .header-profile {
+                align-items: flex-start;
+            }
+
+            .header-image-container {
+                flex-basis: 72px;
+            }
+
+            .header-image-container img {
+                height: 90px;
+                width: 72px;
+            }
         }
 
         main {
@@ -135,20 +170,26 @@
 <body>
     <div class="container">
         <header>
-            <h1>David Offner</h1>
-            <div class="subtitle">Teaching Professor &amp; Director of Undergraduate Studies</div>
-            <div class="subtitle" style="font-size: 0.95rem; margin-top: -1rem;">Department of Mathematical Sciences, Carnegie Mellon University</div>
+            <div class="header-profile">
+                <div>
+                    <h1>David Offner</h1>
+                    <div class="subtitle">Teaching Professor &amp; Director of Undergraduate Studies</div>
+                    <div class="subtitle" style="font-size: 0.95rem; margin-top: -1rem;">Department of Mathematical Sciences, Carnegie Mellon University</div>
+                </div>
+                <div class="header-image-container">
+                    <img src="offner.png" alt="David Offner">
+                </div>
+            </div>
 
             <nav>
                 <a href="index.html">Home</a>
                 <a href="index.html">Research</a>
                 <a href="index.html">Teaching</a>
-                <a class="cv-link" href="cvAug26.pdf" target="_blank" rel="noopener">View CV</a>
+                <a class="cv-link" href="cvAug26.pdf" target="_blank" rel="noopener">CV</a>
             </nav>
         </header>
 
         <main>
-            <a class="back-link" href="index.html">&larr; Back to David Offner's homepage</a>
             <h2>Letters of Recommendation</h2>
 
         <p>If I have agreed to write a recommendation for you, please send in one email or file:</p>

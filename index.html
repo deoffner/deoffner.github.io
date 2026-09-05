@@ -40,6 +40,26 @@
             padding-bottom: 1.5rem;
         }
 
+        .header-profile {
+            align-items: center;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .header-image-container {
+            flex: 0 0 96px;
+        }
+
+        .header-image-container img {
+            background-color: #eee;
+            border-radius: 4px;
+            display: block;
+            height: 120px;
+            object-fit: cover;
+            width: 96px;
+        }
+
         h1 {
             font-size: 2rem;
             font-weight: 600;
@@ -111,6 +131,19 @@
         }
 
         @media (max-width: 600px) {
+            .header-profile {
+                align-items: flex-start;
+            }
+
+            .header-image-container {
+                flex-basis: 72px;
+            }
+
+            .header-image-container img {
+                height: 90px;
+                width: 72px;
+            }
+
             .profile-grid {
                 grid-template-columns: 1fr;
             }
@@ -207,15 +240,22 @@
 
     <div class="container">
         <header>
-            <h1>David Offner</h1>
-            <div class="subtitle">Teaching Professor & Director of Undergraduate Studies</div>
-            <div class="subtitle" style="font-size: 0.95rem; margin-top: -1rem;">Department of Mathematical Sciences, Carnegie Mellon University</div>
+            <div class="header-profile">
+                <div>
+                    <h1>David Offner</h1>
+                    <div class="subtitle">Teaching Professor & Director of Undergraduate Studies</div>
+                    <div class="subtitle" style="font-size: 0.95rem; margin-top: -1rem;">Department of Mathematical Sciences, Carnegie Mellon University</div>
+                </div>
+                <div class="header-image-container">
+                    <img src="offner.png" alt="David Offner">
+                </div>
+            </div>
             
             <nav>
                 <button class="nav-btn active" onclick="switchTab('home')">Home</button>
                 <button class="nav-btn" onclick="switchTab('research')">Research</button>
                 <button class="nav-btn" onclick="switchTab('teaching')">Teaching</button>
-                <a class="cv-link" href="cvAug26.pdf" target="_blank" rel="noopener">View CV</a>
+                <a class="cv-link" href="cvAug26.pdf" target="_blank" rel="noopener">CV</a>
             </nav>
         </header>
 
@@ -233,10 +273,6 @@
                             <li><strong>Phone:</strong> 412-268-9657</li>
                             <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-3413-7991" target="_blank">0000-0002-3413-7991</a></li>
                         </ul>
-                    </div>
-                    
-                    <div class="profile-image-container">
-                        <img src="https://via.placeholder.com/200x250?text=David+Offner" alt="David Offner">
                     </div>
                 </div>
 
@@ -368,45 +404,11 @@
                     <li>J. Bonomo and D. Offner, <a href="https://davidoffner.wordpress.com/wp-content/uploads/2016/05/problem1868.pdf">Solution to Problem 1868</a> (posed by Donald Knuth), <em><a href="http://www.maa.org/press/periodicals/mathematics-magazine">Math. Magazine</a></em> 85 (2012) 154-155.</li>
                 </ul>
 
-                <h2>Undergraduate Research Supervised</h2>
-                <p>I actively supervise undergraduate research projects through programs such as SURF, SURA, and SUAMI. Recent topics include cycle decompositions, game theory algorithms, and inventory theory.</p>
             </section>
 
             <section id="teaching" class="tab-content">
                 <h2>Teaching Overview</h2>
                 <p>At Carnegie Mellon University, I instruct foundational and advanced undergraduate courses in mathematics, operations research, and linear algebra.</p>
-
-                <h2>Carnegie Mellon University Courses</h2>
-                
-                <div class="course-group">
-                    <h3>Recent & Regular Courses</h3>
-                    <ul>
-                        <li><strong>21-090:</strong> Precalculus</li>
-                        <li><strong>21-201:</strong> Undergraduate Colloquium</li>
-                        <li><strong>21-241:</strong> Matrices and Linear Transformations</li>
-                        <li><strong>21-254:</strong> Linear Algebra and Vector Calculus for Engineers</li>
-                        <li><strong>21-292:</strong> Operations Research I</li>
-                        <li><strong>21-599:</strong> Undergraduate Research</li>
-                    </ul>
-                </div>
-
-                <div class="course-group">
-                    <h3>Past Courses</h3>
-                    <ul>
-                        <li><strong>21-127:</strong> Concepts of Mathematics</li>
-                        <li><strong>21-393:</strong> Operations Research II</li>
-                        <li><strong>21-111:</strong> Calculus I</li>
-                        <li><strong>21-122:</strong> Integration, Differential Equations and Approximation</li>
-                        <li><strong>21-228:</strong> Discrete Mathematics</li>
-                    </ul>
-                </div>
-
-                <h2>Educational Leadership & Outreach</h2>
-                <ul>
-                    <li><strong>Director of Undergraduate Studies:</strong> Department of Mathematical Sciences, CMU (2024–Present)</li>
-                    <li><strong>Summer Undergraduate Applied Mathematics Institute (SUAMI):</strong> Instructor and Co-Director/Director</li>
-                    <li><strong>Professional Development:</strong> Led multi-week summer workshops for middle and high school teachers in partnership with Pittsburgh Public Schools, NSF, and PA Department of Education.</li>
-                </ul>
 
                 <h2>Letters of Recommendation</h2>
                 <p><a href="letters-of-recommendation.html">Read the letters of recommendation guidelines</a>.</p>
