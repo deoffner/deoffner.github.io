@@ -4,8 +4,18 @@
     --muted-color: #666666;
     --accent-color: #900000;
     --border-color: #e5e5e5;
+    --image-bg-color: #eeeeee;
     --max-width: 800px;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root[data-theme="dark"] {
+    --bg-color: #1d1d1b;
+    --text-color: #f1f1ed;
+    --muted-color: #b8b8b0;
+    --accent-color: #e07a72;
+    --border-color: #454540;
+    --image-bg-color: #30302c;
 }
 
 * {
@@ -20,6 +30,7 @@ body {
     font-family: var(--font-family);
     line-height: 1.6;
     padding: 2rem 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .container,
@@ -47,7 +58,7 @@ header {
 }
 
 .header-image-container img {
-    background-color: #eee;
+    background-color: var(--image-bg-color);
     border-radius: 4px;
     display: block;
     height: 120px;
@@ -112,6 +123,19 @@ nav .cv-link:hover {
     color: #ffffff;
 }
 
+nav .theme-toggle {
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--muted-color);
+    margin-top: -0.25rem;
+    padding: 0.25rem 0.75rem;
+}
+
+nav .theme-toggle:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
 .tab-content {
     display: none;
 }
@@ -131,7 +155,7 @@ nav .cv-link:hover {
     width: 100%;
     height: auto;
     border-radius: 4px;
-    background-color: #eee;
+    background-color: var(--image-bg-color);
     display: block;
 }
 
