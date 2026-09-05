@@ -122,28 +122,30 @@
         }
 
         h2 {
-            border-bottom: 1px solid var(--border-color);
             font-size: 1.3rem;
-            margin: 2rem 0 1rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
             padding-bottom: 0.25rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
         }
 
         p {
-            color: #333333;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        ul {
+            list-style: square;
+            margin-left: 1.25rem;
             margin-bottom: 1rem;
         }
 
-        ul,
-        ol {
-            margin: 0 0 1rem 1.5rem;
-        }
-
         li {
-            margin-bottom: 0.5rem;
-        }
-
-        a {
-            color: var(--accent-color);
+            margin-bottom: 0.4rem;
         }
 
         .back-link {
