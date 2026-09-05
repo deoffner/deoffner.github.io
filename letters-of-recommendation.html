@@ -39,6 +39,7 @@
             margin-bottom: 2.5rem;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 1.5rem;
+            text-align: left;
         }
 
         .header-profile {
@@ -80,9 +81,16 @@
         }
 
         nav a {
+            background-color: transparent;
+            border: none;
             color: var(--muted-color);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1rem;
             padding: 0.25rem 0;
+            border-bottom: 2px solid transparent;
             text-decoration: none;
+            transition: all 0.2s ease;
         }
 
         nav a:hover {
@@ -120,6 +128,7 @@
         main {
             max-width: var(--max-width);
             margin: 0 auto;
+            text-align: left;
         }
 
         h2 {
@@ -139,10 +148,22 @@
             color: #333;
         }
 
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin: 1.25rem 0 0.5rem 0;
+        }
+
         ul {
             list-style: square;
             margin-left: 1.25rem;
             margin-bottom: 1rem;
+        }
+
+        ol {
+            margin-left: 1.25rem;
+            margin-bottom: 1rem;
+            padding-left: 1.25rem;
         }
 
         li {
@@ -200,31 +221,38 @@
         <main>
             <h2>Letters of Recommendation</h2>
 
-        <p>If I have agreed to write a recommendation for you, please send in one email or file:</p>
-        <ul>
-            <li>a copy of your transcript, unofficial is fine;</li>
-            <li>a copy of your personal statement, CV, or other relevant application materials (if applicable).</li>
-        </ul>
+            <p>If I have agreed to write a recommendation for you, please send in one email or file:</p>
 
-        <p>At least <strong>two weeks</strong> before the first letter is due, e-mail me your answers to the following questions (the more details the better, not all questions may apply):</p>
-        <ol>
-            <li>What is your name, year, and major?</li>
-            <li>For what are you applying? (scholarship, internship, graduate school, etc.)</li>
-            <li>List the programs to which you are applying, together with due dates.</li>
-            <li>How long have I known you, and what is my relationship(s) to you? (instructor, advisor, etc.) Have you TAed or graded for me? If so, for what class(es) and when?</li>
-            <li>For what class(es) have I had you, what final grade(s) did you earn, and how did you distinguish yourself in my class(es)?</li>
-            <li>How would you describe yourself?</li>
-            <li>What are some of your academic accomplishments?</li>
-            <li>What are some of your nonacademic accomplishments?</li>
-            <li>What makes me particularly qualified to write a letter for you?</li>
-            <li>What makes you particularly qualified for this position/honor/award?</li>
-            <li>What are your long-term goals and will this position/honor/award help? If so, how?</li>
-            <li>Additional comments (summer research, interesting jobs, projects, or internships, hobbies, etc.)?</li>
-        </ol>
+            <section class="guideline-section">
+                <ul>
+                    <li>a copy of your transcript, unofficial is fine;</li>
+                    <li>a copy of your personal statement, CV, or other relevant application materials (if applicable).</li>
+                </ul>
+            </section>
 
-        <p>Please <strong>send me reminders</strong> as deadlines approach.</p>
-        <p><strong>Good luck!</strong></p>
-        <p class="attribution">Adapted from <a href="http://www.maa.org/features/TeachingTimeSavers.html" target="_blank" rel="noopener">Michael Orrison</a>, Harvey Mudd College.</p>
+            <section class="guideline-section">
+                <p>At least <strong>two weeks</strong> before the first letter is due, e-mail me your answers to the following questions (the more details the better, not all questions may apply):</p>
+                <ol>
+                    <li>What is your name, year, and major?</li>
+                    <li>For what are you applying? (scholarship, internship, graduate school, etc.)</li>
+                    <li>List the programs to which you are applying, together with due dates.</li>
+                    <li>How long have I known you, and what is my relationship(s) to you? (instructor, advisor, etc.) Have you TAed or graded for me? If so, for what class(es) and when?</li>
+                    <li>For what class(es) have I had you, what final grade(s) did you earn, and how did you distinguish yourself in my class(es)?</li>
+                    <li>How would you describe yourself?</li>
+                    <li>What are some of your academic accomplishments?</li>
+                    <li>What are some of your nonacademic accomplishments?</li>
+                    <li>What makes me particularly qualified to write a letter for you?</li>
+                    <li>What makes you particularly qualified for this position/honor/award?</li>
+                    <li>What are your long-term goals and will this position/honor/award help? If so, how?</li>
+                    <li>Additional comments (summer research, interesting jobs, projects, or internships, hobbies, etc.)?</li>
+                </ol>
+            </section>
+
+            <div>
+                <p>Please <strong>send me reminders</strong> as deadlines approach.</p>
+                <p><strong>Good luck!</strong></p>
+                <p class="attribution">Adapted from <a href="http://www.maa.org/features/TeachingTimeSavers.html" target="_blank" rel="noopener">Michael Orrison</a>, Harvey Mudd College.</p>
+            </div>
         </main>
 
         <footer>
