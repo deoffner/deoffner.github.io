@@ -1,0 +1,267 @@
+:root {
+    --bg-color: #fcfcfc;
+    --text-color: #222222;
+    --muted-color: #666666;
+    --accent-color: #900000;
+    --border-color: #e5e5e5;
+    --max-width: 800px;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+.container,
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+    text-align: left;
+}
+
+.header-profile {
+    align-items: center;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.header-image-container {
+    flex: 0 0 96px;
+}
+
+.header-image-container img {
+    background-color: #eee;
+    border-radius: 4px;
+    display: block;
+    height: 120px;
+    object-fit: cover;
+    width: 96px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    color: var(--muted-color);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav button,
+nav a {
+    background-color: transparent;
+    border: none;
+    color: var(--muted-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+nav button:hover,
+nav a:hover {
+    color: var(--text-color);
+}
+
+nav button.active {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
+    font-weight: 500;
+}
+
+nav .cv-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    margin-top: -0.25rem;
+}
+
+nav .cv-link:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    background-color: #eee;
+    display: block;
+}
+
+.contact-list {
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.contact-list li {
+    margin-bottom: 0.35rem;
+}
+
+.contact-list a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h2:first-of-type {
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 1.25rem 0 0.5rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+ul {
+    list-style: square;
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+ol {
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+    padding-left: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.4rem;
+}
+
+.related-materials {
+    margin-left: 2.5rem;
+}
+
+.pub-item,
+.talk-item,
+.course-group {
+    margin-bottom: 1.25rem;
+}
+
+.pub-item {
+    display: list-item;
+    list-style: square;
+    margin-left: 1.25rem;
+}
+
+.item-title {
+    font-weight: 500;
+}
+
+.item-details {
+    font-size: 0.9rem;
+    color: var(--muted-color);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.attribution {
+    color: var(--muted-color);
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: var(--muted-color);
+    line-height: 1.2;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .header-profile {
+        align-items: flex-start;
+    }
+
+    .header-image-container {
+        flex-basis: 72px;
+    }
+
+    .header-image-container img {
+        height: 90px;
+        width: 72px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image-container {
+        order: -1;
+    }
+}
